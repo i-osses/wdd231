@@ -122,6 +122,30 @@ nav {
   }
 
   .sections-container {
+    display: grid;
     grid-template-columns: 3fr;
   }
+
+  /* Courses css */
+}
+.course-name {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+.course-details {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.completed {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+#filterButtons button {
+    margin: 5px;
+}
+
 }

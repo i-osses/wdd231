@@ -26,7 +26,64 @@ function menuToggle() {
     });
   }
 }
+
+// Certificates section
+
+function displayCourses(coursesToDisplay) {
+  const listElement = document.getElementById('coursesList');
+  listElement.innerHTML = ''; // Clear existing list
+
+  // Create course elements
+  coursesToDisplay.forEach(course => {
+      const courseElement = document.createElement('div');
+      courseElement.className = 'course-name';
+      courseElement.textContent = `${course.subject} ${course.number}: ${course.title}`;
+      courseElement.onclick = () => toggleCourseDetails(course);
+
+      listElement.appendChild(courseElement);
+  });
+}
+
+function toggleCourseDetails(course) {
+  const existingDetails = document.getElementById(`course-${course.number}`);
+  if (existingDetails) {
+      existingDetails.style.display = existingDetails.style.display === 'none' ? 'block' : 'none';
+  } else {
+      const detailsElement = document.createElement('div');
+      detailsElement.id = `course-${course.number}`;
+      detailsElement.className = course.completed ? 'course-details completed' : 'course-details';
+      
+      detailsElement.innerHTML = `
+          <h3>${course.subject} ${course.number}: ${course.title}</h3>
+          <p><strong>Credits:</strong> ${course.credits}</p>
+          <p><strong>Certificate:</strong> ${course.certificate}</p>
+          <p><strong>Description:</strong> ${course.description}</p>
+          <p><strong>Technology:</strong> ${course.technology.join(', ')}</p>
+      `;
+      
+      document.getElementById('coursesList').appendChild(detailsElement);
+  }
+}
+
+function filterCourses(subject) {
+  if (subject === 'All') {
+      displayCourses(courses);
+  } else {
+      const filteredCourses = courses.filter(course => course.subject === subject);
+      displayCourses(filteredCourses);
+  }
+}
+
+function calculateTotalCredits() {
+  const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
+  document.getElementById('creditsCount').textContent = totalCredits;
+}
+
+
 document.addEventListener("DOMContentLoaded", function() {
+  displayCourses(courses);
+  calculateTotalCredits();
   displayFooterDate();
   menuToggle();
+
 });
