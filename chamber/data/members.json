@@ -1,0 +1,67 @@
+{
+  "members": [
+  {
+      "name": "Pioneer Heritage Realty",
+      "address": "123 Zion Way, Salt Lake City, UT 84101",
+      "phone": "801-555-1234",
+      "website": "https://pioneerheritage.com",
+      "image": "images/img.png",
+      "membershipLevel": 3,
+      "other": "Specializes in real estate for LDS communities"
+    },
+    {
+      "name": "Liahona Financial Group",
+      "address": "456 Nephi Rd, Provo, UT 84604",
+      "phone": "801-555-5678",
+      "website": "https://liahonafinancial.com",
+      "image": "images/img.png",
+      "membershipLevel": 2,
+      "other": "Providing financial services with LDS family values"
+    },
+    {
+      "name": "Deseret Bookstore",
+      "address": "789 Moroni Ave, Orem, UT 84057",
+      "phone": "801-555-9012",
+      "website": "https://deseretbookstore.com",
+      "image": "images/img.png",
+      "membershipLevel": 3,
+      "other": "Offers books and materials focused on LDS doctrine"
+    },
+    {
+      "name": "Ensign Landscaping",
+      "address": "321 Alma St, St. George, UT 84770",
+      "phone": "435-555-3456",
+      "website": "https://ensignlandscaping.com",
+      "image": "images/img.png",
+      "membershipLevel": 1,
+      "other": "Landscaping services with a focus on beautifying homes"
+    },
+    {
+      "name": "BYU Catering Services",
+      "address": "222 Cougar Blvd, Provo, UT 84604",
+      "phone": "801-555-7890",
+      "website": "https://byucatering.com",
+      "image": "images/img.png",
+      "membershipLevel": 2,
+      "other": "Catering for events, specializing in LDS gatherings"
+    },
+    {
+      "name": "Temple Square Events",
+      "address": "111 Temple Square, Salt Lake City, UT 84150",
+      "phone": "801-555-6789",
+      "website": "https://templesquareevents.com",
+      "image": "images/img.png",
+      "membershipLevel": 3,
+      "other": "Event planning and hosting at Temple Square"
+    },
+    {
+      "name": "Family History Consultants",
+      "address": "987 Genealogy Ave, Rexburg, ID 83440",
+      "phone": "208-555-4321",
+      "website": "https://familyhistoryconsultants.com",
+      "image": "images/img.png",
+      "membershipLevel": 1,
+      "other": "Assisting families in discovering their LDS genealogy"
+    }
+  ]
+}
