@@ -5,20 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WDD 231 - Chamber of Commerce - Ignacio Osses</title>
-  <meta name="description" content="WDD 231: Chamber of Commerce Webpage Directory - Ignacio Osses">
+  <meta name="description" content="WDD 231: Chamber of Commerce Webpage Homepage - Ignacio Osses">
   <meta name="author" content="Ignacio Osses">
-  <meta property="og:title" content="WDD 231 - Chamber of Commerce Webpage Directory - Ignacio Osses" />
+  <meta property="og:title" content="WDD 231 - Chamber of Commerce Homepage - Ignacio Osses" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://i-osses.github.io/wdd231/chamber/directory.html" />
-  <meta property="og:image" content="https://byui-cse.github.io/wdd231/chamber/images/companies.png" />
+  <meta property="og:url" content="https://i-osses.github.io/wdd231/chamber/index.html" />
+  <meta property="og:image" content="https://byui-cse.github.io/wdd231/chamber/images/main.png" />
 
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <script src="scripts/weather.js" defer></script>
   <script src="scripts/main.js" defer></script>
-  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/spotlight.js" defer></script>
+
   <link rel="icon" href="favicon.ico">
 </head>
 
@@ -44,16 +46,46 @@
   </header>
 
   <main>
-    <div class="menu">
-      <button id="grid">⏹️Grid</button>
-      <button id="list">📄List</button>
+    <img src="images/commerce_chamber_desktop.webp" alt="commerce chamber hero image" id="comerce_hero" loading="lazy">
+
+    <h1>Home</h1>
+    <div id="info">
+      <section class="events col-2-4">
+        <h4>Events</h4>
+      </section>
+
+      <section class="weather col-1-4">
+        <h4>Current Weather</h4>
+        <div id="weather-container">
+          <figure>
+            <img id="weather-icon" src="" alt="">
+
+          </figure>
+          <div id="weather-box">
+            <p><span id="current-temp"></span></p>
+            <p>
+            <figcaption id="figcaption"></figcaption>
+            </p>
+            <p><span id="temp_max"></span></p>
+            <p><span id="temp_min"></span></p>
+            <p><span id="humidity"></span></p>
+            <p><span id="sunrise"></span></p>
+            <p><span id="sunset"></span></p>
+          </div>
+
+        </div>
+
+      </section>
+      <section class="forecast col-1-4">
+        <h4>Weather Forecast</h4>
+
+        <div id="forecast"></div>
+      </section>
     </div>
 
-    <article id="cards" class="grid">
-
-    </article>
-
-
+    <section id="spotlight">
+      <section class="business_spotlights"></section>
+    </section>
   </main>
 
 

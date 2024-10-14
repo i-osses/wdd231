@@ -1,6 +1,6 @@
 {
   "members": [
-  {
+    {
       "name": "Pioneer Heritage Realty",
       "address": "123 Zion Way, Salt Lake City, UT 84101",
       "phone": "801-555-1234",
@@ -24,7 +24,7 @@
       "phone": "801-555-9012",
       "website": "https://deseretbookstore.com",
       "image": "images/img.png",
-      "membershipLevel": 3,
+      "membershipLevel": 4,
       "other": "Offers books and materials focused on LDS doctrine"
     },
     {
@@ -33,7 +33,7 @@
       "phone": "435-555-3456",
       "website": "https://ensignlandscaping.com",
       "image": "images/img.png",
-      "membershipLevel": 1,
+      "membershipLevel": 5,
       "other": "Landscaping services with a focus on beautifying homes"
     },
     {
@@ -62,6 +62,51 @@
       "image": "images/img.png",
       "membershipLevel": 1,
       "other": "Assisting families in discovering their LDS genealogy"
+    },
+    {
+      "name": "LDS Youth Camp",
+      "address": "345 Faith Lane, Sandy, UT 84070",
+      "phone": "801-555-2345",
+      "website": "https://ldsyouthcamp.com",
+      "image": "images/img.png",
+      "membershipLevel": 4,
+      "other": "Offers summer camps with spiritual growth activities"
+    },
+    {
+      "name": "Cedar City Home Services",
+      "address": "456 Cedar St, Cedar City, UT 84720",
+      "phone": "435-555-6780",
+      "website": "https://cedarcityhomeservices.com",
+      "image": "images/img.png",
+      "membershipLevel": 3,
+      "other": "Home repair and maintenance for the LDS community"
+    },
+    {
+      "name": "Wasatch Wellness Center",
+      "address": "789 Healing Way, Provo, UT 84604",
+      "phone": "801-555-3456",
+      "website": "https://wasatchwellness.com",
+      "image": "images/img.png",
+      "membershipLevel": 5,
+      "other": "Wellness center focused on holistic health for families"
+    },
+    {
+      "name": "Heritage Foods",
+      "address": "123 Market St, Salt Lake City, UT 84102",
+      "phone": "801-555-0987",
+      "website": "https://heritagefoods.com",
+      "image": "images/img.png",
+      "membershipLevel": 2,
+      "other": "Specializes in LDS-friendly food products"
+    },
+    {
+      "name": "LDS Artisans",
+      "address": "234 Craft Rd, Orem, UT 84057",
+      "phone": "801-555-8765",
+      "website": "https://ldsartisans.com",
+      "image": "images/img.png",
+      "membershipLevel": 1,
+      "other": "Showcases artwork and crafts inspired by LDS teachings"
     }
   ]
 }
