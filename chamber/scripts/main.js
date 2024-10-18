@@ -30,7 +30,7 @@ function menuToggle() {
   }
 }
 document.addEventListener("DOMContentLoaded", function(){
-  console.log('DOM fully loaded and parsed'); // Check if this logs
+  console.log('DOM fully loaded and parsed'); // Cheking if this log to the console
   menuToggle();
   displayFooterDate();
 });

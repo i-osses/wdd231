@@ -18,6 +18,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <script src="scripts/main.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+  <script src="scripts/modal.js" defer></script>
+
 
   <link rel="icon" href="favicon.ico">
 </head>
@@ -30,7 +33,6 @@
       <p>chamber of commerce</p>
     </section>
 
-
     <a href="#" id="menu"></a>
     <nav>
       <ul class="navigation">
@@ -38,28 +40,133 @@
         <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
         <li><a href="discover.html">Discover</a></li>
-
       </ul>
     </nav>
   </header>
 
   <main>
-    <img src="images/commerce_chamber_desktop.webp" alt="commerce chamber hero image" id="comerce_hero" loading="lazy">
+    <h2>Join Us</h2>
+    <button id="openJoinModal">Join Us</button> <!-- Button to open the modal -->
 
-    <h1>Join Us</h1>
-    <p>paragraph</p>
-
-
+    <!-- Membership cards -->
+    <div class="membership-cards">
+      <div class="membership-card" id="np-membership">
+        <h3>NP Membership</h3>
+        <p>No Fee</p>
+        <button onclick="showModal('np-modal')">Learn More</button>
+      </div>
+      <div class="membership-card" id="bronze-membership">
+        <h3>Bronze Membership</h3>
+        <p>Affordable Rates</p>
+        <button onclick="showModal('bronze-modal')">Learn More</button>
+      </div>
+      <div class="membership-card" id="silver-membership">
+        <h3>Silver Membership</h3>
+        <p>Enhanced Benefits</p>
+        <button onclick="showModal('silver-modal')">Learn More</button>
+      </div>
+      <div class="membership-card" id="gold-membership">
+        <h3>Gold Membership</h3>
+        <p>Premium Benefits</p>
+        <button onclick="showModal('gold-modal')">Learn More</button>
+      </div>
+    </div>
   </main>
 
 
+
+  <!-- Modal for Join Us form -->
+  <div id="joinModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeJoinModal()">&times;</span>
+      <h2>Join Us</h2>
+      <form action="thankyou.html" method="get" id="joinForm">
+        <div>
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" title="Applicant's first name" required
+            autocomplete="given-name">
+        </div>
+        <div>
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" title="Applicant's last name" required
+            autocomplete="family-name">
+        </div>
+        <div>
+          <label for="org-title">Organizational Title:</label>
+          <input type="text" id="org-title" name="org-title" title="Organizational title" pattern="[A-Za-z\s-]{7,}"
+            autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}"
+            title="Only letters, hyphens, and spaces are allowed. Minimum 7 characters." required>
+        </div>
+        <div>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" title="Email address" required autocomplete="email"
+            placeholder="example@domain.com">
+        </div>
+        <div>
+          <label for="phone">Mobile Phone Number:</label>
+          <input type="tel" id="phone" name="phone" title="Mobile phone number" required autocomplete="tel">
+        </div>
+        <div>
+          <label for="business-name">Business/Organization Name:</label>
+          <input type="text" id="business-name" name="business-name" title="Business/Organization name" required
+            autocomplete="organization">
+        </div>
+        <div>
+          <label for="membership-level">Membership Level:</label>
+          <select id="membership-level" name="membership-level">
+            <option value="np">NP Membership (Non-Profit, No Fee)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </div>
+        <div>
+          <label for="description">Business/Organization Description:</label>
+          <textarea id="description" name="description" title="Description"></textarea>
+        </div>
+        <input type="hidden" id="timestamp" name="timestamp" value="">
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modals for membership details -->
+  <div id="np-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('np-modal')">&times;</span>
+      <h3>NP Membership Benefits</h3>
+      <p>Details about NP Membership...</p>
+    </div>
+  </div>
+  <!-- <div id="bronze-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('bronze-modal')">&times;</span>
+      <h3>Bronze Membership Benefits</h3>
+      <p>Details about Bronze Membership...</p>
+    </div>
+  </div> -->
+  <div id="silver-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('silver-modal')">&times;</span>
+      <h3>Silver Membership Benefits</h3>
+      <p>Details about Silver Membership...</p>
+    </div>
+  </div>
+  <div id="gold-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('gold-modal')">&times;</span>
+      <h3>Gold Membership Benefits</h3>
+      <p>Details about Gold Membership...</p>
+    </div>
+  </div>
 
   <footer>
     <div id="footer_text">
       <p>© <span id="currentyear"> </span> - Ignacio Osses - Chile</p>
       <p><span id="lastmodify"></span></p>
     </div>
-
   </footer>
 </body>
 
