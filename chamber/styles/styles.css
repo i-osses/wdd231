@@ -120,7 +120,6 @@ header a {
   min-height: 300px;
   box-sizing: border-box;
 }
-
 .card_link {
   display: flex;
   flex-grow: 1;
@@ -161,6 +160,7 @@ header a {
 
 .list section {
   display: flex;
+
   margin: 0;
   align-items: center;
   padding: 0.25rem;
