@@ -58,8 +58,6 @@ header a {
   content: "≡";
 }
 
-
-
 .navigation {
   list-style: none;
   margin: 0 auto;
@@ -122,6 +120,7 @@ header a {
   min-height: 300px;
   box-sizing: border-box;
 }
+
 .card_link {
   display: flex;
   flex-grow: 1;
@@ -162,7 +161,6 @@ header a {
 
 .list section {
   display: flex;
-  /* grid-template-columns: 2fr 1fr 1fr; */
   margin: 0;
   align-items: center;
   padding: 0.25rem;
@@ -239,10 +237,6 @@ section a {
   color: gold;
 }
 
-
-
-
-
 #comerce_hero {
   display: block;
   width: 100%;
@@ -275,7 +269,6 @@ section a {
 }
 
 #info .col-1-4 {
-  /* flex: 1; */
   margin: 1.5rem;
   padding: 0;
 }
@@ -286,48 +279,44 @@ section a {
   align-items: center;
 }
 
-.weather figure{
+.weather figure {
   display: flex;
-  /* flex-direction: column; */
   justify-items: center;
   justify-content: center;
   align-items: center;
 }
-#weather-icon{
+#weather-icon {
   width: 100px;
 }
-#forecast{
+#forecast {
   padding: 5px 15px;
   margin: 0 15px;
-text-align: center;
+  text-align: center;
 }
 
-#forecast_date{
-  color:var(--background-color);
+#forecast_date {
+  color: var(--background-color);
   border: 1px solid #1a1a2e2d;
   border-radius: 5px;
-
-
 }
-
 
 /* SPOTLIGHT */
 #spotlight {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px; 
+  padding: 20px;
 }
 
 /* Business Spotlights */
 .business_spotlights {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
   padding: 20px;
-  background-color: var(--body-background-color); 
-  border-top: 2px solid #ccc; 
+  background-color: var(--body-background-color);
+  border-top: 2px solid #ccc;
 }
 
 .spotlight-card {
@@ -337,7 +326,7 @@ text-align: center;
   margin: 10px;
   text-align: center;
   flex: 1 1 calc(25% - 20px);
-  min-width: 200px; 
+  min-width: 200px;
 }
 
 .spotlight-logo {
@@ -356,10 +345,11 @@ footer img {
 }
 
 footer img:hover {
-  background-color: rgba(255, 255, 255, 0.142); 
-  border-radius: 15px; 
+  background-color: rgba(255, 255, 255, 0.142);
+  border-radius: 15px;
   height: auto;
 }
+
 footer {
   display: flex;
   flex-direction: column;
@@ -385,11 +375,6 @@ footer p {
   justify-content: flex-end;
 }
 
-
-
-
-
-
 /*Large Screen */
 @media screen and (min-width: 50em) {
   header,
@@ -413,6 +398,7 @@ footer p {
   .navigation {
     display: flex;
   }
+
   .navigation li {
     display: block;
     flex: 1 1 100%;
@@ -428,8 +414,6 @@ footer p {
     display: none;
   }
 
-  
-
   .sections-container {
     display: grid;
     grid-template-columns: 3fr;
@@ -441,7 +425,8 @@ footer p {
     gap: 1.5rem;
     align-items: stretch;
   }
-  #info > * { 
+
+  #info > * {
     flex: 1;
   }
 
@@ -475,33 +460,31 @@ footer p {
   #weather-icon {
     width: 150%;
     height: auto;
-    object-fit: contain; /
+    object-fit: contain;
   }
 
   #weather-box {
     display: flex;
     flex: 2;
     padding: 5px;
-    flex-direction: column; 
-    align-items: flex-start; 
+    flex-direction: column;
+    align-items: flex-start;
     flex-wrap: wrap;
-
   }
 
-  #forecast{
+  #forecast {
     display: flex;
     flex-direction: column;
-    align-items: center ;
+    align-items: center;
     text-align: left;
   }
-
 
   .business_spotlights {
     display: flex;
     flex-direction: row;
     padding: 20px;
     background-color: var(--body-background-color);
-    border-top: 2px solid #ccc; 
+    border-top: 2px solid #ccc;
   }
 
   .spotlight-card {
@@ -511,26 +494,24 @@ footer p {
     margin: 10px;
     text-align: center;
   }
-  
+
   .spotlight-logo {
     width: 100px;
     height: auto;
   }
-  
+
   h3 {
     color: #333;
   }
 
-  #spotlight{
-  align-items: center;
-  align-content: center;
+  #spotlight {
+    align-items: center;
+    align-content: center;
   }
-
 }
 
 /*Medium Screen */
 @media screen and (max-width: 26em) {
-
   #info {
     width: 100%;
     margin: 0;
@@ -552,23 +533,22 @@ footer p {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
-  
-  .weather figure{
+
+  .weather figure {
     display: flex;
     flex-direction: column;
     justify-items: center;
     justify-content: center;
   }
 
-  #forecast{
+  #forecast {
     text-align: center;
   }
 }
 
-
 /* Modal Styles */
 .modal {
-  display: none; 
+  display: none;
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -597,6 +577,7 @@ footer p {
   float: right;
   font-size: 28px;
   font-weight: bold;
+}
 
 .close:hover,
 .close:focus {
@@ -615,7 +596,7 @@ footer p {
 }
 
 .modal-content input[type="submit"] {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 10px;
   border: none;
@@ -624,6 +605,5 @@ footer p {
 }
 
 .modal-content input[type="submit"]:hover {
-  background-color: #45a049; 
-}
+  background-color: #45a049;
 }
