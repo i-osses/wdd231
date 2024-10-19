@@ -241,7 +241,7 @@ section a {
   display: block;
   width: 100%;
   height: auto;
-  max-width: 800px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -375,6 +375,20 @@ footer p {
   justify-content: flex-end;
 }
 
+.sociallinks img {
+  margin: 15px;
+  width: 32px;
+}
+
+#thank_you {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  margin: 10px;
+  border: solid black 1px;
+  border-radius: 15px;
+}
+
 /*Large Screen */
 @media screen and (min-width: 50em) {
   header,
@@ -393,6 +407,13 @@ footer p {
 
   main {
     max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  #join_us {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .navigation {

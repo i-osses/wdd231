@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WDD 231 - Chamber of Commerce - Ignacio Osses</title>
-  <meta name="description" content="WDD 231: Chamber of Commerce Webpage Homepage - Ignacio Osses">
+  <meta name="description" content="WDD 231: Chamber of Commerce Webpage Join Us page- Ignacio Osses">
   <meta name="author" content="Ignacio Osses">
-  <meta property="og:title" content="WDD 231 - Chamber of Commerce - Ignacio Osses" />
+  <meta property="og:title" content="WDD 231 - Join Us Page for the Chamber of Commerce - Ignacio Osses" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://i-osses.github.io/wdd231/chamber/index.html" />
-  <meta property="og:image" content="https://byui-cse.github.io/wdd231/chamber/images/main.png" />
+  <meta property="og:image" content="https://i-osses.github.io/wdd231/chamber/images/commerce_chamber_desktop.webp" />
 
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,7 +44,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="join_us">
     <h2>Join Us</h2>
     <button id="openJoinModal">Join Us</button> <!-- Button to open the modal -->
 
@@ -54,11 +54,6 @@
         <h3>NP Membership</h3>
         <p>No Fee</p>
         <button onclick="showModal('np-modal')">Learn More</button>
-      </div>
-      <div class="membership-card" id="bronze-membership">
-        <h3>Bronze Membership</h3>
-        <p>Affordable Rates</p>
-        <button onclick="showModal('bronze-modal')">Learn More</button>
       </div>
       <div class="membership-card" id="silver-membership">
         <h3>Silver Membership</h3>
@@ -94,7 +89,7 @@
         <div>
           <label for="org-title">Organizational Title:</label>
           <input type="text" id="org-title" name="org-title" title="Organizational title" pattern="[A-Za-z\s-]{7,}"
-            autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}"
+            autocomplete="organization-title"
             title="Only letters, hyphens, and spaces are allowed. Minimum 7 characters." required>
         </div>
         <div>
@@ -115,7 +110,6 @@
           <label for="membership-level">Membership Level:</label>
           <select id="membership-level" name="membership-level">
             <option value="np">NP Membership (Non-Profit, No Fee)</option>
-            <option value="bronze">Bronze Membership</option>
             <option value="silver">Silver Membership</option>
             <option value="gold">Gold Membership</option>
           </select>
@@ -140,13 +134,7 @@
       <p>Details about NP Membership...</p>
     </div>
   </div>
-  <!-- <div id="bronze-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('bronze-modal')">&times;</span>
-      <h3>Bronze Membership Benefits</h3>
-      <p>Details about Bronze Membership...</p>
-    </div>
-  </div> -->
+
   <div id="silver-modal" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('silver-modal')">&times;</span>
@@ -163,10 +151,23 @@
   </div>
 
   <footer>
+
+    <nav class="sociallinks">
+      <a href="https://youtube.com">
+        <img src="images/youtube.svg" alt="Facebook" />
+      </a>
+      <a href="https://twitter.com">
+        <img src="images/twitter-x.svg" alt="Twitter" />
+      </a>
+      <a href="https://linkdin.com">
+        <img src="images/linkedin.svg" alt="Instagram" />
+      </a>
+    </nav>
     <div id="footer_text">
       <p>© <span id="currentyear"> </span> - Ignacio Osses - Chile</p>
       <p><span id="lastmodify"></span></p>
     </div>
+
   </footer>
 </body>
 
