@@ -646,7 +646,7 @@ footer p {
 }
 
 /* aside content */
-#aside-content {
+.aside-content {
   margin: 0.5rem;
   padding: 2rem;
   border: solid 1px black;
