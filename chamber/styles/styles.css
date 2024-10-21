@@ -388,6 +388,12 @@ footer p {
   border: solid black 1px;
   border-radius: 15px;
 }
+#join_us {
+  padding: 20px;
+  margin: 5px auto;
+  width: 100%;
+  box-sizing: border-box;
+}
 
 /*Large Screen */
 @media screen and (min-width: 50em) {
@@ -412,6 +418,7 @@ footer p {
 
   #join_us {
     padding: 20px;
+    margin: 5px auto;
     width: 100%;
     box-sizing: border-box;
   }
@@ -627,4 +634,62 @@ footer p {
 
 .modal-content input[type="submit"]:hover {
   background-color: #45a049;
+}
+
+/* Discover page styles */
+/* Grid layout */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+}
+
+/* aside content */
+#aside-content {
+  margin: 0.5rem;
+  padding: 2rem;
+  border: solid 1px black;
+}
+
+.gallery-title,
+#visitorMessage {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+/* Gallery styling */
+.gallery {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .gallery img:hover {
+    transform: none;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .gallery img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
 }

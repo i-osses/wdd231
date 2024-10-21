@@ -18,6 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <script src="scripts/main.js" defer></script>
+  <script src="scripts/discover.js" defer></script>
 
   <link rel="icon" href="favicon.ico">
 </head>
@@ -43,11 +44,49 @@
     </nav>
   </header>
 
-  <main>
-    <img src="images/commerce_chamber_desktop.webp" alt="commerce chamber hero image" id="comerce_hero" loading="lazy">
+  <main class="grid-container">
 
-    <h1>Discover</h1>
-    <p>paragraph</p>
+    <!-- Sidebar -->
+    <aside>
+      <div id="visitorMessage"></div>
+
+      <div id="aside-content">
+        <h2>heading 1</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, quam laudantium? Fugiat ex, voluptates
+          consectetur nihil accusamus maxime placeat dolorum asperiores. Alias corrupti doloribus excepturi dolorem
+          mollitia. Quas, ex minus.</p>
+      </div>
+
+      <div id="aside-content">
+        <h2>heading 2</h2>
+        <img src="images/commerce_chamber_desktop.webp" alt="commerce chamber hero image" id="comerce_hero"
+          loading="lazy">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ea nisi provident alias explicabo, recusandae
+          sit optio necessitatibus laudantium sed quis, non dolorum nostrum blanditiis mollitia vero nihil eius
+          voluptatem.</p>
+      </div>
+
+
+
+    </aside>
+
+    <!-- Main content: Gallery with images -->
+
+    <section id="gallery">
+      <h2 class="gallery-title">Local Attractions</h2>
+      <div class="gallery">
+        <img src="..\chamber\images\discover\halloween.webp" alt="halloween event image" loading="lazy">
+        <img src="..\chamber\images\discover\handcrafted.webp" alt="handcrafted products fair image" loading="lazy">
+        <img src="..\chamber\images\discover\independence.webp" alt="independence day event event image" loading="lazy">
+        <img src="..\chamber\images\discover\conference.webp" alt="conference highlight image" loading="lazy">
+        <img src="..\chamber\images\discover\upcoming.webp" alt="upcoming event image" loading="lazy">
+        <img src="..\chamber\images\discover\visitus.webp" alt="visit us image" loading="lazy">
+      </div>
+    </section>
+  </main>
+
+
+
 
 
   </main>
@@ -55,11 +94,21 @@
 
 
   <footer>
+    <nav class="sociallinks">
+      <a href="https://youtube.com">
+        <img src="images/youtube.svg" alt="Facebook" />
+      </a>
+      <a href="https://twitter.com">
+        <img src="images/twitter-x.svg" alt="Twitter" />
+      </a>
+      <a href="https://linkdin.com">
+        <img src="images/linkedin.svg" alt="Instagram" />
+      </a>
+    </nav>
     <div id="footer_text">
       <p>© <span id="currentyear"> </span> - Ignacio Osses - Chile</p>
       <p><span id="lastmodify"></span></p>
     </div>
-
   </footer>
 </body>
 
