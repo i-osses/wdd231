@@ -675,7 +675,11 @@ footer p {
 }
 
 .gallery img:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
+}
+
+.caption {
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width: 768px) {
