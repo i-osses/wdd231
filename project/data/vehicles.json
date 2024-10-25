@@ -7,7 +7,7 @@
     "price": 35000,
     "vin": "1FTEW1C56KFA12345",
     "color": "Blue",
-    "image": "../images/vehicles/1/1.webp"
+    "image": "./images/vehicles/1/1.webp"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "price": 45000,
     "vin": "1FT7W2B60NED67890",
     "color": "Red",
-    "image": "../images/vehicles/2/1.webp"
+    "image": "./images/vehicles/2/1.webp"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "price": 40000,
     "vin": "3GCUKSEC1LGZ23456",
     "color": "Black",
-    "image": "../images/vehicles/3/1.webp"
+    "image": "./images/vehicles/3/1.webp"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "price": 38000,
     "vin": "5TFDY5F15MX123456",
     "color": "White",
-    "image": "../images/vehicles/4/1.webp"
+    "image": "./images/vehicles/4/1.webp"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "price": 37000,
     "vin": "1C6RR7PT6KS123456",
     "color": "Silver",
-    "image": "../images/vehicles/5/1.webp"
+    "image": "./images/vehicles/5/1.webp"
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "price": 46000,
     "vin": "3GTU9CED1NG123456",
     "color": "Green",
-    "image": "../images/vehicles/6/1.webp"
+    "image": "./images/vehicles/6/1.webp"
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "price": 34000,
     "vin": "1C4RJFBGXLC123456",
     "color": "Gray",
-    "image": "../images/vehicles/7/1.webp"
+    "image": "./images/vehicles/7/1.webp"
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "price": 42000,
     "vin": "1FMCU9E67NLB12345",
     "color": "Orange",
-    "image": "../images/vehicles/8/1.webp"
+    "image": "./images/vehicles/8/1.webp"
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "price": 48000,
     "vin": "1GNSKCKD7MR123456",
     "color": "Navy Blue",
-    "image": "../images/vehicles/9/1.webp"
+    "image": "./images/vehicles/9/1.webp"
   },
   {
     "id": 10,
@@ -97,7 +97,7 @@
     "price": 36000,
     "vin": "JTEBU5JRXK5612345",
     "color": "Dark Green",
-    "image": "../images/vehicles/10/1.webp"
+    "image": "./images/vehicles/10/1.webp"
   },
   {
     "id": 11,
@@ -107,7 +107,7 @@
     "price": 39000,
     "vin": "1N6AA1ED9LN123456",
     "color": "Beige",
-    "image": "../images/vehicles/11/1.webp"
+    "image": "./images/vehicles/11/1.webp"
   },
   {
     "id": 12,
@@ -117,7 +117,7 @@
     "price": 32000,
     "vin": "1C4RDJFG3KC123456",
     "color": "Red",
-    "image": "../images/vehicles/12/1.webp"
+    "image": "./images/vehicles/12/1.webp"
   },
   {
     "id": 13,
@@ -127,7 +127,7 @@
     "price": 41000,
     "vin": "1FM5K8D8XMG123456",
     "color": "Black",
-    "image": "../images/vehicles/13/1.webp"
+    "image": "./images/vehicles/13/1.webp"
   },
   {
     "id": 14,
@@ -137,7 +137,7 @@
     "price": 52000,
     "vin": "1GNSCJKD5NR123456",
     "color": "Silver",
-    "image": "../images/vehicles/14/1.webp"
+    "image": "./images/vehicles/14/1.webp"
   },
   {
     "id": 15,
@@ -147,6 +147,6 @@
     "price": 43000,
     "vin": "1C4HJXEG3MW123456",
     "color": "Blue",
-    "image": "../images/vehicles/15/1.webp"
+    "image": "./images/vehicles/15/1.webp"
   }
 ]
