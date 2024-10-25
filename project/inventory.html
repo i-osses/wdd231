@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory - Dealership, Provo, Utah</title>
+  <meta name="description"
+    content="Browse our extensive inventory of F150, F250, 4x4, and SUV AWD vehicles at our dealership in Provo, Utah. Find the perfect vehicle for your needs." />
+  <meta name="author" content="Ignacio Osses">
+  <meta property="og:title" content="Browse Our Inventory - Trucks and SUVs in Provo, Utah" />
+  <meta property="og:description"
+    content="Explore the latest F150, F250, 4x4, and SUV AWD vehicles in our inventory at the dealership in Provo, Utah. Quality trucks and SUVs at competitive prices." />
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/inventory.js" defer></script>
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+  <header>
+    <section id="logo-title">
+      <div id="div-logo">
+        <img class="logo" src="images/logo.png">
+      </div>
+
+      <div id="div-title">
+        <h1>Dealership</h1>
+        <h3>Provo, Utah</h3>
+      </div>
+    </section>
+
+
+    <a href="#" id="menu"></a>
+    <nav id="navbar">
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="about_us.html">About us</a></li>
+        <li><a href="contact_us.html">Contact us</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inventory">
+      <h2>Available Inventory</h2>
+
+      <!-- Search -->
+      <input type="text" id="searchInput" placeholder="Search by VIN, Year, or Make...">
+
+      <button id="searchBtn">Search</button>
+
+      <button id="showAllBtn">Show All</button>
+      <div class="dropdown">
+        <button id="sortBtn">Sort by Price</button>
+        <div id="sortOptions" class="dropdown-content">
+          <button id="sortLowToHighBtn">Low to High</button>
+          <button id="sortHighToLowBtn">High to Low</button>
+        </div>
+      </div>
+
+      <div id="cards"></div>
+    </section>
+
+  </main>
+
+  <!-- Modal -->
+  <div id="vehicleModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalVehicleTitle"></h2>
+      <img id="modalVehicleImage" src="" alt="">
+      <p id="modalVehicleDetails"></p>
+      <p id="modalVehiclePrice"></p>
+    </div>
+  </div>
+
+
+  <footer>
+    <nav class="sociallinks">
+      <a href="https://youtube.com" target="_blank">
+        <img src="images/youtube.svg" alt="YouTube" />
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <img src="images/twitter-x.svg" alt="Twitter" />
+      </a>
+      <a href="https://facebook.com" target="_blank">
+        <img src="images/facebook.svg" alt="Facebook" />
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="images/instagram.svg" alt="Instagram" />
+      </a>
+    </nav>
+    <div id="footer_text">
+      <p>© <span id="currentyear"> </span> by DevOS - Utah, USA</p>
+      <p><span id="lastmodify"></span></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
