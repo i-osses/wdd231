@@ -1,26 +1,30 @@
 document.addEventListener("DOMContentLoaded", function() {
     getVehicles();
   
+
     const searchBtn = document.getElementById("searchBtn");
     searchBtn.addEventListener("click", function() {
         const query = document.getElementById("searchInput").value;
-        filterVehicles(query);
+        filterVehicles(query); 
     });
   
+   
     const searchInput = document.getElementById("searchInput");
     searchInput.addEventListener("keypress", function(event) {
-        if (event.key === "Enter") {
+        if (event.key === "Enter") { 
             const query = searchInput.value;
-            filterVehicles(query);
+            filterVehicles(query);  
         }
     });
   
+   
     const showAllBtn = document.getElementById("showAllBtn");
     showAllBtn.addEventListener("click", function() {
-        searchInput.value = '';
-        displayVehicles(vehiclesData);
+        searchInput.value = ''; 
+        displayVehicles(vehiclesData); 
     });
   
+    
     const sortLowToHighBtn = document.getElementById("sortLowToHighBtn");
     sortLowToHighBtn.addEventListener("click", function() {
         sortVehicles('lowToHigh');
@@ -34,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
   
   const url = "data/vehicles.json";
   const cards = document.querySelector("#cards");
-  let vehiclesData = [];
-  let displayedVehicles = [];
+  let vehiclesData = []; 
+  let displayedVehicles = []; 
   
   async function getVehicles() {
     try {
@@ -44,16 +48,16 @@ document.addEventListener("DOMContentLoaded", function() {
             throw new Error('Network response was not ok ' + response.statusText);
         }
         const data = await response.json();
-        vehiclesData = data;
-        displayedVehicles = data;
-        displayVehicles(vehiclesData);
+        vehiclesData = data; 
+        displayedVehicles = data; 
+        displayVehicles(vehiclesData); 
     } catch (error) {
         console.error('There was a problem with the fetch operation:', error);
     }
   }
   
   function displayVehicles(vehicles) {
-    cards.innerHTML = '';
+    cards.innerHTML = ''; 
     
     if (vehicles.length === 0) {
         cards.innerHTML = '<p>No vehicles found matching your search.</p>';
@@ -105,14 +109,6 @@ document.addEventListener("DOMContentLoaded", function() {
     displayVehicles(sortedVehicles);
   }
   
-  const options = {
-    method: 'GET',
-    headers: {
-      'x-rapidapi-key': '8ba7ead721msh2c060117739468dp11a49cjsn82c8bb70fd1c',
-      'x-rapidapi-host': 'vin-lookup2.p.rapidapi.com'
-    }
-  };
-  
   function openModal(vehicle) {
     const modal = document.getElementById("vehicleModal");
     const modalTitle = document.getElementById("modalVehicleTitle");
@@ -123,47 +119,23 @@ document.addEventListener("DOMContentLoaded", function() {
     modalTitle.textContent = `${vehicle.make} ${vehicle.model} (${vehicle.year})`;
     modalImage.src = vehicle.image;
     modalDetails.innerHTML = `
-      <p>VIN: ${vehicle.vin}</p>
-      <p>Color: ${vehicle.color}</p>
+        <p>VIN: ${vehicle.vin}</p>
+        <p>Color: ${vehicle.color}</p>
     `;
     modalPrice.textContent = `Price: $${vehicle.price.toLocaleString()}`;
-
-    modal.dataset.vin = vehicle.vin;
   
     modal.style.display = "block";
   }
   
-  function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
-  }
+  const closeModal = document.querySelector(".close");
+  closeModal.addEventListener("click", function() {
+    document.getElementById("vehicleModal").style.display = "none";
+  });
   
-  async function openPriceComparisonModal() {
-    const vehicleModal = document.getElementById("vehicleModal");
-    const vin = vehicleModal.dataset.vin;
-  
-    const url = `https://vin-lookup2.p.rapidapi.com/vehicle-lookup?vin=${vin}`;
-  
-    try {
-      const response = await fetch(url, options);
-      if (!response.ok) {
-        throw new Error(`Error: ${response.status} ${response.statusText}`);
-      }
-      const result = await response.json();
-  
-      document.getElementById("loanValue").textContent = `Loan Value: $${result.loan_value}`;
-      document.getElementById("tradeInValue").textContent = `Trade-In Value: $${result.trade_in_value}`;
-      document.getElementById("adjustedTradeInValue").textContent = `Adjusted Trade-In Value: $${result.adjusted_trade_in_value}`;
-  
-      document.getElementById("priceComparisonModal").style.display = "block";
-    } catch (error) {
-      console.error('Error fetching price comparison data:', error);
-    }
-  }
-  
-
   window.addEventListener("click", function(event) {
-    if (event.target.classList.contains("modal")) {
-      event.target.style.display = "none";
+    const modal = document.getElementById("vehicleModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
     }
   });
   

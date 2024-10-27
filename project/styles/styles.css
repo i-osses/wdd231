@@ -151,7 +151,6 @@ footer p {
 }
 
 /* Inventory Section */
-
 #inventory {
   padding: 20px;
 }
@@ -202,11 +201,10 @@ footer p {
 #searchBtn,
 #showAllBtn,
 #sortBtn {
-  /* Add this line */
   display: inline-block;
   margin: 10px 5px;
   padding: 10px 20px;
-  background-color: var(--secondary-color); /* Same background color */
+  background-color: var(--secondary-color);
   color: white;
   border: none;
   border-radius: 5px;
@@ -218,7 +216,7 @@ footer p {
 #showAllBtn:hover,
 #sortBtn:hover {
   /* Add this line */
-  background-color: #0056b3; /* Same hover color */
+  background-color: #0056b3;
 }
 
 #searchInput {
@@ -229,12 +227,11 @@ footer p {
   border-radius: 5px;
 }
 
-/* Align buttons in one line on small screens */
 .button-container {
-  display: flex; /* Use flexbox to align buttons */
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
-  justify-content: center; /* Center align buttons */
-  margin-bottom: 20px; /* Space below the button container */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .dropdown {
@@ -243,7 +240,7 @@ footer p {
 }
 
 .dropdown-content {
-  display: none; /* Hidden by default */
+  display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
@@ -256,24 +253,24 @@ footer p {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  width: 100%; /* Full width */
-  border: none; /* No border */
-  background: none; /* No background */
-  cursor: pointer; /* Pointer cursor */
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .dropdown-content button:hover {
-  background-color: #f1f1f1; /* Highlight on hover */
+  background-color: #f1f1f1;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block; /* Show the dropdown on hover */
+  display: block;
 }
 
 /* Base modal styling */
 /* Modal styling */
 .modal {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -281,7 +278,7 @@ footer p {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.6); /* Dark background overlay */
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* Modal content styling */
@@ -291,12 +288,11 @@ footer p {
   margin: 5% auto;
   padding: 20px;
   border-radius: 8px;
-  width: 90%; /* Mobile-first width */
-  max-width: 500px; /* Limit size on larger screens */
+  width: 90%;
+  max-width: 500px;
   text-align: center;
 }
 
-/* Close button styling */
 .close {
   position: absolute;
   top: 10px;
@@ -311,8 +307,8 @@ footer p {
 .modal-content img {
   width: 100%;
   height: auto;
-  max-height: 60vh; /* Restrict height based on viewport for larger screens */
-  object-fit: contain; /* Prevents cropping */
+  max-height: 60vh;
+  object-fit: contain;
   border-radius: 5px;
   margin: 10px 0;
 }
@@ -320,7 +316,7 @@ footer p {
 /* Responsive layout adjustments */
 @media (min-width: 768px) {
   .modal-content {
-    width: 80%; /* Medium screen adjustments */
+    width: 80%;
     max-width: 600px;
     padding: 30px;
   }
@@ -328,13 +324,12 @@ footer p {
 
 @media (min-width: 1024px) {
   .modal-content {
-    width: 60%; /* Larger screens */
+    width: 60%;
     max-width: 800px;
   }
 
-  /* Ensure image is well-contained on larger screens */
   .modal-content img {
-    max-height: 70vh; /* Adjusts based on available screen height */
+    max-height: 70vh;
   }
 }
 
@@ -451,8 +446,8 @@ footer p {
     padding: 15px;
     text-align: center;
     transition: transform 0.2s;
-    width: 250px; /* Set a fixed width */
-    height: 400px; /* Set a fixed height */
+    width: 250px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -464,8 +459,8 @@ footer p {
 
   .vehicle-card img {
     width: 100%;
-    height: 150px; /* Set a fixed height for images */
-    object-fit: cover; /* Ensures image fits nicely */
+    height: 150px;
+    object-fit: cover;
     border-radius: 4px;
   }
 
@@ -554,7 +549,8 @@ footer p {
 }
 
 /* About Us Intro Section */
-#about-us-intro {
+#about-us-intro,
+#thank-you {
   padding: 40px;
   background-color: var(--body-background-color);
   color: var(--text-color);
@@ -562,12 +558,14 @@ footer p {
   margin-bottom: 40px;
 }
 
-#about-us-intro h2 {
+#about-us-intro h2,
+#thank-you h2 {
   font-size: 2.5rem;
   color: var(--primary-color);
 }
 
-#about-us-intro p {
+#about-us-intro p,
+#thank-you p {
   font-size: 1.2rem;
   line-height: 1.8;
   max-width: 800px;
@@ -747,5 +745,143 @@ footer p {
 }
 
 #contactForm input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height for vertical centering */
+  margin: 0;
+  background-color: #e0e0e0; /* Optional: light background for contrast */
+}
+
+#customerInquiry {
+  max-width: 800px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px; /* To prevent crowding on small screens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Container INFO styling */
+.company_info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+/* Address and map styling for larger screens */
+.company_info .address,
+.company_info .map {
+  flex: 1 1 400px;
+  max-width: 500px;
+  margin: auto;
+}
+
+/* Map styling */
+.company_info .map iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .company_info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .company_info .map iframe {
+    height: 350px;
+  }
+}
+/* Style the result container */
+.vin_decoder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Heading and paragraph spacing */
+.vin_decoder h2,
+.vin_decoder p {
+  margin: 1.5rem;
+}
+
+/* Result display styles */
+#result {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  white-space: pre-wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 400px;
+}
+
+/* Individual field styles for labels and values */
+#result .field {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+#result span.label {
+  font-weight: bold;
+  color: #007bff;
+  flex: 1;
+  text-align: left;
+}
+
+#result span.value {
+  color: #555;
+  flex: 2;
+  text-align: left;
+}
+
+/* Style the VIN input and button */
+#vin {
+  padding: 8px;
+  width: 250px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+button {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
   background-color: #0056b3;
 }

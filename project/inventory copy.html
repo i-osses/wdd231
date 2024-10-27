@@ -31,7 +31,6 @@
         <h1>Dealership</h1>
         <h3>Provo, Utah</h3>
       </div>
-
     </section>
 
 
@@ -42,7 +41,6 @@
         <li><a href="inventory.html">Inventory</a></li>
         <li><a href="about_us.html">About us</a></li>
         <li><a href="contact_us.html">Contact us</a></li>
-        <li><a href="value_vin.html">VIN Tool</a></li>
 
       </ul>
     </nav>
@@ -72,31 +70,16 @@
   </main>
 
   <!-- Modal -->
-  <!-- First Modal -->
   <div id="vehicleModal" class="modal">
     <div class="modal-content">
-      <span class="close" onclick="closeModal('vehicleModal')">&times;</span>
+      <span class="close">&times;</span>
       <h2 id="modalVehicleTitle"></h2>
       <img id="modalVehicleImage" src="" alt="">
       <p id="modalVehicleDetails"></p>
       <p id="modalVehiclePrice"></p>
-
-      <!--Button to Open Price Comparison Modal (modal over modal) -->
-      <button id="comparePriceBtn" onclick="openPriceComparisonModal()">Compare Prices</button>
     </div>
   </div>
 
-  <!-- Second Modal for Price Comparison -->
-  <div id="priceComparisonModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('priceComparisonModal')">&times;</span>
-      <h2>Price Comparison</h2>
-      <p id="modalVehiclePrice"></p>
-      <p id="loanValue"></p>
-      <p id="tradeInValue"></p>
-      <p id="adjustedTradeInValue"></p>
-    </div>
-  </div>
 
   <footer>
     <nav class="sociallinks">

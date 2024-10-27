@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You - Dealership, Provo, Utah</title>
+  <title>VIN Decoder - Dealership</title>
   <meta name="description"
-    content="Thank you for contacting our dealership in Provo, Utah. We will get back to you shortly." />
+    content="VIN Decoder to lookup detailed vehicle information using the Vehicle Identification Number (VIN). Find details on make, model, year, and more for vehicles at our Provo, Utah dealership." />
   <meta name="author" content="Ignacio Osses">
-  <meta property="og:title" content="Thank You for Contacting Dealership in Provo" />
+  <meta property="og:title" content="VIN Lookup Tool - Find Your Vehicle's Details" />
   <meta property="og:description"
-    content="We appreciate your interest. Our team will review your inquiry and respond as soon as possible." />
+    content="Use our VIN decoder to retrieve detailed information about your vehicle. Perfect for F150, F250, 4x4, and AWD SUVs." />
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/contact_us.js" defer></script>
+  <script src="scripts/value_vin.js" defer></script>
   <script src="scripts/main.js" defer></script>
   <link rel="icon" href="favicon.ico">
 </head>
@@ -31,6 +31,7 @@
         <h1>Dealership</h1>
         <h3>Provo, Utah</h3>
       </div>
+
     </section>
 
 
@@ -46,36 +47,41 @@
       </ul>
     </nav>
   </header>
+  </header>
 
-  <main>
-    <section id="thank-you">
-      <h2>Thank You, <span id="customerName">Customer</span>!</h2>
-      <p>We appreciate your interest in our dealership. Our team has received your message:</p>
-      <blockquote id="customerInquiry">"Your inquiry will appear here."</blockquote>
-      <p>We will respond as soon as possible. In the meantime, feel free to <a href="inventory.html">browse our
-          inventory</a> or return to the <a href="index.html">home page</a>.</p>
+  <main class="vin_decoder">
+    <section id="vin-decoder">
+      <h2 class="">VIN Decoder</h2>
+      <p>Enter the Vehicle Identification Number (VIN) below to retrieve details about the vehicle's make, model, year,
+        and more. Our VIN lookup is ideal for getting quick information on F150, F250, 4x4, and AWD SUVs in our
+        inventory.</p>
+
+      <input type="text" id="vin" placeholder="Enter VIN here" aria-label="VIN Input">
+      <button id="vin_btn" onclick="fetchVehicleData()">Lookup VIN</button>
+      <pre id="result">Vehicle data will appear here...</pre>
     </section>
   </main>
 
   <footer>
     <nav class="sociallinks">
       <a href="https://youtube.com">
-        <img src="images/youtube.svg" alt="YouTube" />
+        <img src="images/youtube.svg" alt="Facebook" />
       </a>
       <a href="https://twitter.com">
         <img src="images/twitter-x.svg" alt="Twitter" />
       </a>
       <a href="https://facebook.com">
-        <img src="images/facebook.svg" alt="Facebook" />
+        <img src="images/facebook.svg" alt="Instagram" />
       </a>
       <a href="https://instagram.com">
         <img src="images/instagram.svg" alt="Instagram" />
       </a>
     </nav>
     <div id="footer_text">
-      <p>© <span id="currentyear"></span> by DevOS - Utah, USA</p>
+      <p>© <span id="currentyear"> </span> by DevOS - Utah, USA</p>
       <p><span id="lastmodify"></span></p>
     </div>
+
   </footer>
 
 </body>

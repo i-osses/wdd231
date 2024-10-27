@@ -7,7 +7,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
-  color: #1c396d; /* Ford dark blue */
+  color: #1c396d;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,7 +15,7 @@ body {
 }
 
 header {
-  background-color: #003399; /* Ford blue */
+  background-color: #003399;
   color: white;
   text-align: center;
   padding: 20px 0;
@@ -35,7 +35,7 @@ a.button {
   display: inline-block;
   margin: 15px 0;
   padding: 10px 20px;
-  background-color: #003399; /* Ford blue */
+  background-color: #003399;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -43,7 +43,7 @@ a.button {
 }
 
 a.button:hover {
-  background-color: #1c396d; /* Darker Ford blue */
+  background-color: #1c396d;
 }
 
 footer {
