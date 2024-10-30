@@ -20,10 +20,12 @@ header,
 footer {
   background-color: var(--secondary-color);
   color: var(--font-header-footer);
+  font-family: var(--font-family);
 }
 header {
   display: flex;
   flex-direction: column;
+  font-family: var(--font-family);
 }
 
 #logo-title {
